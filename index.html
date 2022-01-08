@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Prayer Times By Siam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- <script src="./axios.min.js"></script> -->
+  <link rel="stylesheet" href="./custom.css">
+</head>
+
+<body class="myBg">
+
+
+  <section class="">
+    <div class="container myWidth">
+      <div class="row justify-content-center text-center middle bg-info bg-gradient">
+        <h2 class="mt-3 bg-primary bg-gradient">Salah Times</h2>
+        <h4 class="mt-1">Bangladesh</h4>
+
+        <div class="row mt-2">
+          <div class="col">
+            <!-- <label class="form-label" for="cityN"></label> -->
+          <select class="form-select"  name="cityN" id="city" aria-label="Default select example">
+          <option hidden selected value="3" >Select City</option>
+          <option value="dhaka">Dhaka</option>
+          <option value="chittagong">Chittagong</option>
+          <option value="khulna">Khulna</option>
+          <option value="sylhet">Sylhet</option>
+          <option value="borishal">Borishal</option>
+          <option value="rajshahi">Rajshahi</option>
+
+        </select>
+          </div>
+          <div class="col">
+            <!-- <label class="form-label" for="schoolN"></label> -->
+        <select class="form-select"  name="schoolN" id="school" aria-label="Default select example">
+        <option hidden selected value="3">Madhab</option>
+        <option value="0">Shafi</option>
+        <option value="1">Hanafi</option>
+        
+
+      </select>
+          </div>
+
+          <!-- <h5 id="cityH5">City</h5> -->
+        
+        </div>
+        
+
+        
+        <h5 id="date" class="mt-3">Date</h5>
+
+        <div class="row justify-content-center col-sm-12 col-lg-0">
+          <div class="mt-3 col-md-11">
+            <table class="table table-responsive table-bordered ">
+              <tbody>
+
+                <tr class="table-primary">
+                  <td>Fajr</td>
+                  <td id="fajr">.....</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Sunrise</td>
+                  <td id="sunrise">.....</td>
+                </tr>
+                <tr class="table-primary">
+                  <td>Dhuhr</td>
+                  <td id="dhuhr">.....</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Asr</td>
+                  <td id="asr">.....</td>
+                </tr>
+                <tr class="table-primary">
+                  <td>Sunset</td>
+                  <td id="sunset">.....</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Maghrib</td>
+                  <td id="maghrib">.....</td>
+                </tr>
+                <tr class="table-primary">
+                  <td>Isha</td>
+                  <td id="isha">.....</td>
+                </tr>
+              </tbody>
+            </table>
+            <button id="get" class="btn btn-primary mb-2">GET TIME</button>
+          </div>
+          <footer>
+            <p>&#169; Siam &#169;</p>
+          </footer>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
